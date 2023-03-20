@@ -1,0 +1,22 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreymafra55/ListaDeTarefas.git"
+  },
+  "author": "Andrey Mafra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreymafra55/ListaDeTarefas/issues"
+  },
+  "homepage": "https://github.com/andreymafra55/ListaDeTarefas#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
