@@ -6,7 +6,7 @@ const Checklist = require("../models/checklist");
 
 router.get("/", async (req, res) => {
   try {
-    let checklists = await Checklist.find({});
+    let checklists = await Checklist.find({}).populate('tasks');
     res.status(200).render("checklists/index", { checklists: checklists });
   } catch (error) {
     res
@@ -28,7 +28,7 @@ router.get("/new", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   try {
-    let checklist = await Checklist.findById(req.params.id);
+    let checklist = await Checklist.findById(req.params.id).populate('tasks');
     res.status(200).render("checklists/show", { checklist: checklist });
   } catch (error) {
     res
